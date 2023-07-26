@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+   background: linear-gradient(#fff, #5dc0bb);
+}
+.header row{
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/* move navigation bar to right */
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #556;
+}
+p{
+    color:#556;
+}
+/* centralize the home page */
+.container{
+    max-width: 1300px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/* marginalize home page welcoming section */
+.slo-quote-img {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* sizing home page image */
+.col-1 img{
+    max-width: 100px;
+    padding: 50px 0;
+} 
+
+/* sizing h1 */
+.col-1 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+} 
+/* design button */
+.button{
+    display: inline-block;
+    background: #eb9a31;
+    color: aliceblue;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius:30px;
+    transition: background 0.5s;
+}
+
+.button:hover{
+    background: #563434;
+}
