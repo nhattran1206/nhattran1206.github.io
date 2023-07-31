@@ -1,3 +1,11 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Tran Minh Nhat
+ID: s3924826
+Acknowledgement: GreatStack, Cem Eygi Media  */
+
 * {
     margin: 0;
     padding: 0;
@@ -93,25 +101,32 @@ p{
     margin: 10px 15px;
     background-position: center;
     background-size: cover;
+    background-color: white;
     transition: transform 0.5s;
   }
-.card1{
+/* .card1, .card2, .card3{
+    height: 200px;
+    margin-top: auto; */
+
+.fic-1{
     background-image: url(image/fiction-category.webp);
 }
-.card2{
+.non-fic{
     background-image: url(image/nonfiction-category.jpg);
 }
-.card3{
+.txtbook{
     background-image: url(image/textbook-category.jpg);
 }
 .card1:hover, .card2:hover, .card3:hover{
     transform: translateY(-10px);
 }
 
-.card1, .card2, .card3 h5{
+.card h5{
     color: #ff9204;
     text-shadow: 0 0 5px #999;
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
 }
 
 .small-container{
@@ -143,7 +158,7 @@ p{
 .title::after{
     content: '';
     background: #ff9204;
-    width: 80px;
+    width: 160px;
     height: 5px;
     border-radius: 5px;
     position: absolute;
@@ -154,7 +169,7 @@ p{
 
 h4{
     color: #555;
-    font-weight: normal;
+    font-weight: bold;
 }
 .col-4 p{
     font-size: 14px;
