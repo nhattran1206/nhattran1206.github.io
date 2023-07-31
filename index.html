@@ -1,3 +1,11 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Tran Minh Nhat
+ID: s3924826
+Acknowledgement: GreatStack -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,32 +37,62 @@
             </div>
         <!-- Home Page Welcoming -->
         <div class="row">
-            <div class="col-1">
+            <div class="col-2">
                 <h1>Unlock Your Imagination: <br>Explore, Read, Repeat!</h1>
                 <p><b>Indulge in the boundless magic of literature as you embrace the allure of new books. With each page turned, <br>you embark on a journey of knowledge, adventure, and inspiration that knows no limits.</b></p>
-                <a href=""class="button">Get Started &#8680;</a>
+                <a href="#Categories"class="button">Get Started &#8680;</a>
             </div>
-            <div class="col-1"></div>
+            <div class="col-2">
             <img src="image/Book_HomePage.png" alt="HomePage image" width="300px">
+            </div>
         </div>
     </div>
  </section>
 
  <!------------ Featured-Books --------------->
- <section class="Featured-Books">
+ <div class="Categories" id ="Categories">
     <div class="small-container">
-        <div class="row" id ="Featured-Books">
-            <div class="col-2">
-                <img src="image/fiction1.jpg" alt="The Spectacular">
+        <div class="row" id ="Categories">
+            <a href="#Fiction">
+                <div class="card1">
+                    <h5>Fiction</h5>
+                </div>
+            </a>
+            <div class="card2">
+                <h5>Non Fiction</h5>
             </div>
-            <div class="col-2">
-                <img src="image/nonfiction1.jpeg" alt="The Sixth Extinction">
-            </div>
-            <div class="col-2">
-                <img src="image/fiction3.jpeg" alt="The Da Vinci Code">
+            <div class="card3">
+                <h5>Textbooks</h5>
             </div>
         </div>
     </div>
- </section>
+</div>
+
+<!-- Fiction -->
+    <div class="small-container">
+        <h2 class="title" id="Fiction">Fiction</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="image/fiction1.jpeg" alt="The Spectacular">
+                <h4>The Spectacular</h4>
+                <p>$29.91</p>
+            </div>
+            <div class="col-4">
+                <img src="image/fiction2.jpeg" alt="The Maze Runner">
+                <h4>The Maze Runner</h4>
+                <p>$17.53</p>
+            </div>
+            <div class="col-4">
+                <img src="image/fiction3.jpeg" alt="The Da Vinci Code">
+                <h4>The Da Vinci Code</h4>
+                <p>$24.58</p>
+            </div>
+            <div class="col-4">
+                <img src="image/fiction4.jpeg" alt="the CATCHER in the RYE">
+                <h4>the CATCHER in the RYE</h4>
+                <p>$16.59</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

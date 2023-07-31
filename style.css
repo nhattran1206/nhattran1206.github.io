@@ -52,13 +52,13 @@ p{
     justify-content: space-around;
 }
 /* sizing home page image */
-.col-1 img{
-    max-width: 100px;
+.col-2 img{
+    max-width: 500px;
     padding: 50px 0;
 } 
 
 /* sizing h1 */
-.col-1 h1{
+.col-2 h1{
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
@@ -78,18 +78,40 @@ p{
     background: #563434;
 }
 
-.Featured-Books{
+.Categories{
     margin: 70px 0;
 }
 
-.col-2{
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
+.card1, .card2, .card3{
+    width: 300px;
+    height: 330px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+  }
+.card1{
+    background-image: url(image/fiction-category.webp);
+}
+.card2{
+    background-image: url(image/nonfiction-category.jpg);
+}
+.card3{
+    background-image: url(image/textbook-category.jpg);
+}
+.card1:hover, .card2:hover, .card3:hover{
+    transform: translateY(-10px);
 }
 
-.col-2 img{
-    width: 100%;
+.card1, .card2, .card3 h5{
+    color: #ff9204;
+    text-shadow: 0 0 5px #999;
+    font-size: 24px;
 }
 
 .small-container{
@@ -97,4 +119,47 @@ p{
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff9204;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
 }
