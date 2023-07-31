@@ -101,33 +101,28 @@ p{
     margin: 10px 15px;
     background-position: center;
     background-size: cover;
-    background-color: white;
     transition: transform 0.5s;
   }
-/* .card1, .card2, .card3{
-    height: 200px;
-    margin-top: auto; */
-
-.fic-1{
+.card1{
     background-image: url(image/fiction-category.webp);
 }
-.non-fic{
+.card2{
     background-image: url(image/nonfiction-category.jpg);
 }
-.txtbook{
+.card3{
     background-image: url(image/textbook-category.jpg);
 }
 .card1:hover, .card2:hover, .card3:hover{
     transform: translateY(-10px);
 }
-
-.card h5{
-    color: #ff9204;
+.card,.card1,.card2,.card3 h5{
+    color: #555;
     text-shadow: 0 0 5px #999;
     font-size: 28px;
     font-weight: bolder;
     text-align: center;
 }
+
 
 .small-container{
     max-width: 1080px;
@@ -146,6 +141,7 @@ p{
 
 .col-4 img{
     width: 100%;
+    box-shadow: 0 0 5px #555;
 }
 
 .title{
