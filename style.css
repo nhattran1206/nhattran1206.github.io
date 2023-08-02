@@ -4,7 +4,7 @@ Semester: 2023B
 Assessment: Assignment 1
 Author: Tran Minh Nhat
 ID: s3924826
-Acknowledgement: GreatStack, Cem Eygi Media  */
+Acknowledgement: GreatStack, Cem Eygi Media, CodingNepal  */
 
 * {
     margin: 0;
@@ -177,6 +177,9 @@ h4{
     color: #556;
     font-weight: bold;
 }
+.rating .fa{
+    color: rgb(247, 193, 15);
+}
 .col-4 p{
     font-size: 14px;
 }
@@ -225,8 +228,58 @@ h4{
     font-weight: 400;
     margin: 0px 5px;
 }
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* ------media query for menu----- */
 
-@media (max-width: 768px){
+@media (max-width: 992px){
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    .navbar ul{
+        position: fixed;
+        width:100%;
+        height: 100vh;
+        background: #fff;
+        top:150px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    .navbar nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color:#556;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+@media (max-width: 800px){
     .footer-navbar ul{
         flex-direction: column;
     }
@@ -235,4 +288,5 @@ h4{
         text-align: center;
         margin: 10px;
     }
+
 }
