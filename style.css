@@ -140,7 +140,11 @@ p{
     padding-left: 25px;
     padding-right: 25px;
 }
-
+.video-container{
+    max-width: 1080px;
+    margin: auto;
+    text-align: center;
+}
 .col-4{
     flex-basis: 25%;
     padding: 10px;
@@ -240,6 +244,8 @@ h4{
 #check{
     display: none;
 }
+
+
 /* ------media query for menu----- */
 
 @media (max-width: 992px){
@@ -292,5 +298,9 @@ h4{
 @media (max-width: 700px){
     .logo img{
         width: 120px;
+    }
+    .video-container iframe{
+        width: 300px;
+        height: 120px;
     }
 }
