@@ -4,7 +4,7 @@ Semester: 2023B
 Assessment: Assignment 1
 Author: Tran Minh Nhat
 ID: s3924826
-Acknowledgement: GreatStack, Cem Eygi Media, CodingNepal  */
+Acknowledgement: GreatStack, Cem Eygi Media, CodingNepal, dcode */
 
 * {
     margin: 0;
@@ -89,6 +89,7 @@ p{
     margin: 30px 0;
     border-radius:30px;
     transition: background 0.5s; 
+    cursor: pointer;
 }
 /* combine with transition for delay effect */
 .button:hover{
@@ -156,6 +157,7 @@ p{
 .col-4 img{
     width: 100%;
     box-shadow: 0 0 5px #556;
+    cursor: pointer;
 }
 
 .title{
@@ -191,7 +193,7 @@ h4{
 .col-4:hover{
     transform: translateY(-5px);
 }
-
+/* ----------- footer --------------- */
 .footer{
     background-color: #5dc0bb;
 }
@@ -244,7 +246,7 @@ h4{
 #check{
     display: none;
 }
-
+/*------------ breadcrumbs --------------*/
 .breadcrumb{
     padding: 10px;
     font-family: 'Roboto', sans-serif;
@@ -271,7 +273,7 @@ h4{
     font-weight: 500;
 }
 
-/* book detail */
+/*------------- book detail ------------*/
 .book-detail{
     margin-top: 80px;
 }
@@ -320,7 +322,72 @@ input:focus{
     height: 150px;
     margin-left:10px;
 }
+/*------------ Contact us form ------------*/
+.contact-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+form{
+    width: 90%;
+    max-width: 600px;
+  }
+  .form-group {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .form-group1 {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .form-group1 label{
+    display: block;
+    font-weight: bold;
+    color: #556;
+  }
+  .form-group label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #556;
+    cursor: text;
+  }
+  .form-group input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #ff9204;
+    background: transparent;
+    font-size: 15px;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn-container button {
+    display: inline-block;
+    background: #eb9a31;
+    color: aliceblue;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius:30px;
+    transition: background 0.5s; 
+    cursor: pointer;
+  }
+  .btn-container button:hover{
+    background: #563434;
+  }
 
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top:-35px;
+    font-size: 14px;
+}
 /* ------media query for responsive website----- */
 
 @media (max-width: 992px){
