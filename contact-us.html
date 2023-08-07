@@ -45,46 +45,36 @@ Acknowledgement: GreatStack, Cem Eygi Media, CodingNepal, dcode -->
     </div>
  </section>
  <br><br><br><br>
- <h2 class="title">Contact Us</h2>
+ <h2 class="title-1">Contact Us</h2>
  <div class="contact-form">
     <form id="contacForm" action="#" method="post">
-      <div class="form-group1">
-        <label for="contactPurpose">Contact Purpose:</label>
+      <div class="form-group">
+        <label for="contactPurpose">Contact Purpose</label>
         <select id="contactPurpose" name="contactPurpose">
           <option value="sell">I want to sell books</option>
           <option value="buy">I want to buy books</option>
         </select>
-      </div><br>
-      <div class="form-group">
-        <input type="text" id="name" name="name" required>
         <label for="name"><i class="fas fa-user"></i> Name</label>
-      </div>
-      <div class="form-group">
-        <input type="email" id="email" name="email" required>
+        <input type="text" id="name" name="name" required>
         <label for="email"><i class="fas fa-envelope"></i> Email</label>
-      </div>
-      <div class="form-group">
-        <input type="tel" id="phone" name="phone" required>
+        <input type="email" id="email" name="email" required>
         <label for="phone"><i class="fas fa-phone-square-alt"></i> Phone</label>
+        <input type="tel" id="phone" name="phone" required>
       </div>
-      <div class="form-group1">
+      <div class="form-group2">
         <label>Contact Preference:</label>
         <input type="checkbox" id="contactByEmail" name="contactPreference" value="email">
         <label for="contactByEmail">By email</label>
         <input type="checkbox" id="contactByPhone" name="contactPreference" value="phone">
         <label for="contactByPhone">By phone</label>
-      </div>
-      <div class="form-group1">
         <label>Receive Weekly Newsletter:</label>
-        <input type="radio" id="yesNewsletter" name="newsletter" value="yes" checked>
+        <input type="radio" id="yesNewsletter" name="newsletter" value="yes" checked> 
         <label for="yesNewsletter">Yes</label>
         <input type="radio" id="noNewsletter" name="newsletter" value="no">
         <label for="noNewsletter">No</label>
-      </div><br>
-      <div class="form-group">
-        <textarea id="extraNotes" rows="8" name="extraNotes" required></textarea>
-        <label for="extraNotes"><i class="fas fa-comments"></i> Extra Notes</label>
       </div>
+        <label for="extraNotes"><i class="fas fa-comments"></i> Extra Notes</label>
+        <textarea id="extraNotes" rows="8" name="extraNotes" required></textarea>
       <div class="btn-container">
         <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
         <button type="reset">Reset</button>
