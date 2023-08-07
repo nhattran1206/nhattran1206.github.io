@@ -325,7 +325,7 @@ input:focus{
 }
 /*------------ Contact us form ------------*/
 .contact-form {
-    max-width: 60%;
+    max-width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
