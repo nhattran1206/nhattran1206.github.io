@@ -319,8 +319,8 @@ input:focus{
     flex-direction: column;
 }
 .more-img-col img{
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     margin-left:10px;
 }
 /*------------ Contact us form ------------*/
@@ -450,6 +450,12 @@ textarea:valid~label{
         flex-direction: column;
     }
 }
+@media (max-width: 850px){
+    .img-info-order h1{
+        font-size: 35px;
+        line-height: 40px;
+    }     
+}
 @media (max-width: 800px){
     .footer-navbar ul{
         flex-direction: column;
@@ -484,7 +490,7 @@ textarea:valid~label{
     }
     .img-info-order h1{
         font-size: 26px;
-        line-height: 22px;
+        line-height: 30px;
     }
     .image-item {
         display: flex;
@@ -521,7 +527,7 @@ textarea:valid~label{
     }
     .img-info-order h1{
         font-size: 26px;
-        line-height: 22px;
+        line-height: 30px;
     }
     .image-item {
         display: flex;
