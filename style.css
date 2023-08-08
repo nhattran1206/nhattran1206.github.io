@@ -100,7 +100,7 @@ p{
     margin: 70px 0;
 }
 
-/* Category options styling */
+/*--------- Category options styling -----------*/
 .card1, .card2, .card3{
     width: 300px;
     height: 330px;
@@ -127,14 +127,14 @@ p{
     transform: translateY(-10px);
 }
 .card,.card1,.card2,.card3 h5{
-    color: #556;
+    color: black;
     text-shadow: 0 0 5px #999;
     font-size: 28px;
     font-weight: bolder;
     text-align: center;
 }
 
-/* general small container for each category and subcategory section  */
+/* ----------- For Book Sections ------------- */
 .small-container{
     max-width: 1080px;
     margin: auto;
@@ -166,7 +166,7 @@ p{
     margin: 0 auto 80px;
     position: relative;
     line-height: 60px;
-    color: #555;
+    color: black;
     font-weight: bolder;
 }
 .title::after{
@@ -386,16 +386,7 @@ form{
   .btn-container button:hover{
     background: #563434;
   }
-
-input:focus~label,
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label{
-    top:-35px;
-    font-size: 14px;
-}
-
-/* ---------- Policy text alignment ------------- */
+/* ---------- Alternative title------------- */
 .title-1{
     text-align: center;
     margin: 0 auto 30px;
@@ -414,7 +405,7 @@ textarea:valid~label{
 
     }
 }
-
+/* When screen at 858 change nav bar to hidden vertical nav bar with burger icon menu */
 @media (max-width: 858px){
     .checkbtn{
         display: block;
@@ -450,12 +441,14 @@ textarea:valid~label{
         flex-direction: column;
     }
 }
+/* at 850 change font size of book names in book detail page */
 @media (max-width: 850px){
     .img-info-order h1{
         font-size: 35px;
         line-height: 40px;
     }     
 }
+/* change footer nav bar to vertical one */
 @media (max-width: 800px){
     .footer-navbar ul{
         flex-direction: column;
@@ -466,6 +459,7 @@ textarea:valid~label{
         margin: 10px;
     }
 }
+/* resizing logo and video */
 @media (max-width: 700px){
     .logo img{
         width: 120px;
@@ -475,6 +469,7 @@ textarea:valid~label{
         height: 150px;
     }
 }
+/*----------- make responsive book detail information --------------*/
 @media only screen and (max-width: 768px){
     .row{
         text-align: center;
